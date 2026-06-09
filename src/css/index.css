@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.cabecalho{
+    width: 100vw;
+    height: 12vh;
+    background-color:#051331;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+.home{
+    color:#d44b07
+}
+.home:hover{
+    border-bottom: 2px solid #d44b07;
+    cursor: pointer;
+    color: #EF5C10;
+}
+.sobre:hover{
+    border-bottom: 2px solid #d44b07;
+    cursor: pointer;
+}
+.contato:hover{
+    border-bottom: 2px solid #d44b07;
+    cursor: pointer;
+}
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+.logo{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    width: 25%;
+    background-color: #051331;
+}
+
+.botoesNavegacao{
+    height: 100%;
+    width: 40%;
+    background-color:#051331;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.botoesNavegacao p{
+    font-size: 150%;   
+}
+.faleConosco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    background-color: #051331;
+}
+.whats{
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: #051331;
+    border: orangered solid 2px;
+    color: white;
+    font-weight: 500;
+}
+.whats:hover{
+    background-color: #d44b07;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.bannerPrincipal{
+    display:flex;
+    background-color: #03153B;
+    width: 100%;
+    height: 72vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tituloCTA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    flex-direction: column;
+    font-weight: bolder;
+    width: 40vw;
+    height: 70vh;
+    background-color: transparent;
+    gap: 14px;
+}
+.imgCTA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    height: 45vh;
+    border-radius: 20px;
+}
+.imgCTA img {
+    display: flex;
+    border-radius: 20px;
+    width: 50vw;
+    height: 45vh;
+}
+
+.titulo{
+    color: rgb(255, 255, 255);
+
+}
+.subtitulo{
+    color: rgba(220,231,255,0.95);
+    font-size: 1.1rem;
+    max-width: 36vw;
+    line-height: 1.4;
+}
+.cta{
+    margin-top: 10px;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background-color: #EF5C10;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(239,92,16,0.25);
+}
+.cta:hover{
+    background-color: #d44b07;
+    transform: translateY(-2px);
+}
+.partePrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 130vh;
+    margin-top: -8%;
+}
+
+.barraInformacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardInfos1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F6F6F6;
+    width: 90vw;
+    height: 23vh;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 90%;
+
+}
+
+.servicoSmart, .servicoAcessorio, .servicoAssistencia, .servicoProdutos, .servicoParcele {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 15%;
+}   
+
+.cardInfos1 img {
+    height:40%;
+}
+
+.cardInfos2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #051230;
+    width: 90vw;
+    height: 18vh;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 90%;
+    color: aliceblue;
+}
+
+.caracteristicaQualidade, .caracteristicaConfianca, .caracteristicaRapidez, .caracteristicaPosVenda{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 25%;
+}
+
+.caracteristicaQualidade div, .caracteristicaConfianca div, .caracteristicaRapidez div, .caracteristicaPosVenda div {
+    text-align: left;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    
+}
+.caracteristicaQualidade img{
+    height: 50%;
+    width: 20%;
+}
+
+.ofertas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #051331;
+    width: 90vw;
+    height: 60vh;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 90%;
+    padding: 0 0 0 2%;
+}
+
+.tituloInformacoesOfertas {
+    border-radius:20px;
+    text-align: left;
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 14%;
+    background-color: rgb(255, 255, 255);
+}
+
+.tituloOfertas{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tituloOfertas .badge{
+    display: inline-block;
+    background: #fff;
+    color: #EF5C10;
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+}
+.tituloOfertas h4{
+    margin: 0;
+    color: #EF5C10;
+    font-size: 0.9rem;
+    font-weight: 700;
+    opacity: 0.95;
+}
+.tituloOfertas h1{
+    margin: 6px 0 0 0;
+    font-size: 1.6rem;
+    line-height: 1.15;
+    color: #111;
+}
+
+.CTAOfertas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 255, 255);
+}
+
+.CTAOfertas p{
+    margin: 0 0 12px 0;
+    color: #333;
+    max-width: 320px;
+    text-align: left;
+}
+
+.ofertasInsta{
+    background: #ffffff;
+    color: #EF5C10;
+    border: 2px solid #EF5C10;
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.ofertasInsta:hover{
+    background: #d8100a;
+}
+
+.tituloOfertas h4 {
+    color: #EF5C10;
+}
+.tituloOfertas h1 {
+    text-align: center;
+    font-size: 220%;
+    font-weight: bolder;
+}
+.tituloInformacoesOfertas p {
+    font-weight: 650;
+    text-align: center;
+}
+.ofertasInsta{
+    margin-top: 10px;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background-color: #EF5C10;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(239,92,16,0.25);
+}
+
+
+.produtosOfertados{
+    width: 60%;
+    min-height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #051331;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.carrossel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.containerProdutos {
+    background-color: blue  ;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    transition: transform 0.35s ease;
+    will-change: transform;
+}
+
+.produtoOferta {
+    min-width: 260px;
+    max-width: 260px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 80%;
+}
+
+.carrossel button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(255,255,255,0.96);
+    color: #051331;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.carrossel button:hover {
+    background-color: #EF5C10;
+    color: #fff;
+}
+
+.imgProdutoOferta{
+    height: 55%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgProdutoOferta img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.rodape {
+    height: 13vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #03153B;
+    color: #fff;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 4vw;
+    gap: 12px;
+}
+
+.logoRodape{
+    max-width: 140px;
+    height: auto;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.social-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.iconInstagram, .iconFacebook {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 480px) {
+    .cabecalho{
+        height: 10vh;
+        padding: 0 12px;
+    }
+    .logo img{ width: 130px; height: auto; }
+    .botoesNavegacao{ display: none; }
+    .whats{ height: 34px; width: 110px; font-size: 0.9rem; }
+    .bannerPrincipal{ flex-direction: column; padding-top: 12vh; gap: 18px; height: auto; }
+    .tituloCTA{ width: 92%; height: auto; padding: 12px; }
+    .titulo{ font-size: 1.6rem; }
+    .subtitulo{ font-size: 1rem; max-width: 100%; }
+    .imgCTA{ width: 92%; height: 220px; border-radius: 12px; }
+    .cardInfos1, .cardInfos2{ flex-direction: column; width: 94%; height: auto; gap: 12px; }
+    .cardInfos1 .servicoSmart, .cardInfos1 .servicoAcessorio, .cardInfos1 .servicoAssistencia, .cardInfos1 .servicoProdutos, .cardInfos1 .servicoParcele{ width: 100%; }
+    .ofertas{ width: 94%; margin: 1.5rem auto; }
+    .tituloInformacoesOfertas{ flex-direction: column; align-items: flex-start; padding: 18px; }
+    .leftBlock, .rightBlock{ width: 100%; display: flex; justify-content: center; }
+    .leftBlock{ text-align: left; }
+    .rightBlock{ margin-top: 6px; }
+    .produtosOfertados{ flex-direction: column; width: 100%; gap: 12px; }
+    .rodape{ height: auto; padding: 20px 0; }
+    .footer-container{ flex-direction: column; gap: 12px; padding: 16px 4vw; }
+    .footer-left{ align-items: center; }
+    .footer-right{ justify-content: center; }
+}
