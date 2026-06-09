@@ -4,11 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.querySelector(".next");
     const prevButton = document.querySelector(".prev");
     let index = 0;
-    function getVisibleCards() {
-        if (window.innerWidth <= 768) {
-            return 1;
-        }
-        return 3;
+    function visibleCards() {
+        return window.innerWidth <= 768 ? 1 : 3;
     }
     function updateCarousel() {
         const width = items[0].offsetWidth;
@@ -18,21 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     nextButton.addEventListener("click", () => {
         const maxIndex =
-            items.length - getVisibleCards();
-        if (index < maxIndex) {
+            items.length - visibleCards();
+        if(index < maxIndex){
             index++;
             updateCarousel();
         }
     });
     prevButton.addEventListener("click", () => {
-        if (index > 0) {
+        if(index > 0){
             index--;
             updateCarousel();
         }
     });
-    window.addEventListener("resize", () => {
-        updateCarousel();
-    });
+    window.addEventListener("resize", updateCarousel);
     updateCarousel();
 });
 
