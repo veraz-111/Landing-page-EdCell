@@ -584,74 +584,73 @@
 @media (max-width: 768px){
 
     .cabecalho{
-        padding: 0 15px;
         height: 80px;
-    }
-
-    .logo{
-        width: auto;
-    }
-
-    .logo img{
-        width: 130px;
-        height: auto;
+        padding: 0 15px;
     }
 
     .botoesNavegacao{
-        display: none;
+        display:none;
+    }
+
+    .logo{
+        width:auto;
+    }
+
+    .logo img{
+        width:130px;
+        height:auto;
     }
 
     .faleConosco{
-        width: auto;
+        width:auto;
     }
 
     .whats{
-        width: 120px;
-        height: 38px;
-        font-size: .8rem;
+        width:120px;
+        height:38px;
+        font-size:.8rem;
     }
 
     .bannerPrincipal{
-        flex-direction: column;
-        height: auto;
-        padding: 120px 20px 40px;
-        gap: 30px;
+        flex-direction:column;
+        padding:120px 20px 40px;
+        height:auto;
+        gap:25px;
     }
 
     .tituloCTA{
-        width: 100%;
-        height: auto;
+        width:100%;
+        height:auto;
     }
 
     .titulo{
-        font-size: 2rem;
+        font-size:2rem;
     }
 
     .subtitulo{
-        max-width: 100%;
+        max-width:100%;
     }
 
     .imgCTA{
-        width: 100%;
-        height: auto;
+        width:100%;
+        height:auto;
     }
 
     .imgCTA img{
-        width: 100%;
-        height: auto;
+        width:100%;
+        height:auto;
     }
 
     .partePrincipal{
-        height: auto;
-        margin-top: 30px;
-        gap: 25px;
+        height:auto;
+        gap:25px;
+        margin-top:20px;
     }
 
     .cardInfos1{
-        flex-direction: column;
-        height: auto;
-        padding: 25px;
-        gap: 20px;
+        flex-direction:column;
+        height:auto;
+        gap:20px;
     }
 
     .servicoSmart,
@@ -659,102 +658,90 @@
     .servicoAssistencia,
     .servicoProdutos,
     .servicoParcele{
-        width: 100%;
+        width:100%;
     }
 
     .cardInfos2{
-        flex-direction: column;
-        height: auto;
-        padding: 25px;
-        gap: 25px;
+        flex-direction:column;
+        height:auto;
+        gap:20px;
     }
 
     .caracteristicaQualidade,
     .caracteristicaConfianca,
     .caracteristicaRapidez,
     .caracteristicaPosVenda{
-        width: 100%;
+        width:100%;
     }
 
     .caracteristicaQualidade div,
     .caracteristicaConfianca div,
     .caracteristicaRapidez div,
     .caracteristicaPosVenda div{
-        width: 80%;
+        width:80%;
     }
 
     .ofertas{
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        gap: 20px;
+        flex-direction:column;
+        height:auto;
     }
 
     .tituloInformacoesOfertas{
-        width: 100%;
-        height: auto;
-        gap: 25px;
-        padding: 20px;
-    }
-
-    .tituloOfertas h1{
-        font-size: 1.8rem;
-    }
-
-    .CTAOfertas p{
-        max-width: 100%;
+        width:100%;
+        height:auto;
+        padding:20px;
+        gap:25px;
     }
 
     .produtosOfertados{
-        width: 100%;
-        padding: 0;
+        width:100%;
+        padding:0;
     }
 
     .produtoOferta{
-        min-width: 100%;
-        max-width: 100%;
+        min-width:100%;
+        max-width:100%;
     }
 
     .imgProdutoOferta{
-        height: 200px;
+        height:220px;
     }
 
     .modalProduto{
-        flex-direction: column;
-        width: 95%;
-        height: 90%;
-        margin-left: 0;
-        overflow-y: auto;
+        flex-direction:column;
+        width:100%;
+        height:auto;
+        max-height:95vh;
+        margin-left:0;
+        overflow-y:auto;
     }
 
     .imagemProduto{
-        width: 100%;
-        height: 250px;
+        width:100%;
+        height:250px;
     }
 
     .informacoesProduto{
-        width: 100%;
-        height: auto;
+        width:100%;
     }
 
     .nomeProduto{
-        font-size: 1.8rem;
+        font-size:1.7rem;
     }
 
     .comprarProduto{
-        width: 100%;
+        width:100%;
     }
 
     .footer-container{
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
+        flex-direction:column;
+        text-align:center;
     }
 
     .footer-left,
     .footer-right{
-        width: 100%;
-        align-items: center;
+        width:100%;
+        align-items:center;
     }
 
 }
