@@ -90,9 +90,10 @@
 }
 .BannerPrincipal{
     width: 100vw;
-    height: 100vh;
-    background-image: url(../img/whatsapp-image-2024-11-08-at-10-51-10-1731078280.jpeg);
-    background: opacity(0.8);
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../../img/image.png);
+    background: opacity(0.3);
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,8 +120,6 @@
 .rodape {
     height: 13vh;
     width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
     background-color: #03153B;
     color: #fff;
 }

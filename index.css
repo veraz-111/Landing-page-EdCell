@@ -22,17 +22,26 @@
     font-weight: 600;
     letter-spacing: 0.2px;
 }
+
 .home{
-    color:#d44b07
+    color:#d44b07;
+    text-decoration: none;
 }
 .home:hover{
-    border-bottom: 2px solid #d44b07;
     cursor: pointer;
     color: #EF5C10;
+    border-bottom: 2px solid #d44b07;
+}
+.sobre{
+    text-decoration: none;
 }
 .sobre:hover{
     border-bottom: 2px solid #d44b07;
     cursor: pointer;
+}
+.contato{
+    text-decoration: none;
+    color: white;
 }
 .contato:hover{
     border-bottom: 2px solid #d44b07;
@@ -426,7 +435,7 @@
 
 .rodape {
     height: 13vh;
-    width: 100%;
+    height: auto;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-color: #03153B;
@@ -582,77 +591,63 @@
     transform: translateY(-2px);
 }
 @media (max-width: 768px){
-
     .cabecalho{
-        height: 80px;
-        padding: 0 15px;
+        height:80px;
+        padding:0 15px;
     }
-
     .botoesNavegacao{
         display:none;
     }
-
     .logo{
         width:auto;
     }
-
     .logo img{
         width:130px;
         height:auto;
     }
-
     .faleConosco{
         width:auto;
     }
-
     .whats{
         width:120px;
         height:38px;
         font-size:.8rem;
     }
-
     .bannerPrincipal{
         flex-direction:column;
         padding:120px 20px 40px;
         height:auto;
         gap:25px;
     }
-
     .tituloCTA{
         width:100%;
         height:auto;
     }
-
     .titulo{
         font-size:2rem;
     }
-
     .subtitulo{
         max-width:100%;
     }
-
     .imgCTA{
         width:100%;
         height:auto;
     }
-
     .imgCTA img{
         width:100%;
         height:auto;
     }
-
     .partePrincipal{
         height:auto;
         gap:25px;
         margin-top:20px;
     }
-
     .cardInfos1{
         flex-direction:column;
         height:auto;
         gap:20px;
+        padding:20px;
     }
-
     .servicoSmart,
     .servicoAcessorio,
     .servicoAssistencia,
@@ -660,53 +655,84 @@
     .servicoParcele{
         width:100%;
     }
-
     .cardInfos2{
         flex-direction:column;
         height:auto;
         gap:20px;
+        padding:20px;
     }
-
     .caracteristicaQualidade,
     .caracteristicaConfianca,
     .caracteristicaRapidez,
     .caracteristicaPosVenda{
         width:100%;
     }
-
     .caracteristicaQualidade div,
     .caracteristicaConfianca div,
     .caracteristicaRapidez div,
     .caracteristicaPosVenda div{
         width:80%;
     }
-
     .ofertas{
         flex-direction:column;
         height:auto;
+        padding:15px;
+        gap:20px;
     }
-
     .tituloInformacoesOfertas{
         width:100%;
         height:auto;
-        padding:20px;
+        padding:25px;
         gap:25px;
     }
-
+    .tituloOfertas h1{
+        font-size:1.2rem;
+        text-align:center;
+    }
+    .CTAOfertas{
+        gap:15px;
+    }
     .produtosOfertados{
         width:100%;
         padding:0;
     }
-
+    .carrossel{
+        position:relative;
+        padding:0 10px;
+    }
+    .containerProdutos{
+        gap:0;
+    }
+    .prev,
+    .next{
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        z-index:100;
+    }
+    .prev{
+        left:5px;
+    }
+    .next{
+        right:5px;
+    }
     .produtoOferta{
         min-width:100%;
         max-width:100%;
+        padding:15px;
     }
-
     .imgProdutoOferta{
-        height:220px;
+        height:300px;
     }
-
+    .imgProdutoOferta img{
+        max-height:100%;
+        width:auto;
+        object-fit:contain;
+    }
+    .produtoOferta h3{
+        font-size:1.2rem;
+        margin-top:10px;
+    }
     .modalProduto{
         flex-direction:column;
         width:100%;
@@ -715,33 +741,45 @@
         margin-left:0;
         overflow-y:auto;
     }
-
     .imagemProduto{
         width:100%;
         height:250px;
     }
-
     .informacoesProduto{
         width:100%;
     }
-
     .nomeProduto{
         font-size:1.7rem;
     }
-
     .comprarProduto{
         width:100%;
     }
-
+    .rodape{
+        width: 100%;
+        min-height: 180px;
+        width:100%;
+        height:auto;
+        padding:25px 15px;
+    }
     .footer-container{
         flex-direction:column;
-        text-align:center;
+        gap:20px;
     }
-
     .footer-left,
+    .footer-center,
     .footer-right{
         width:100%;
+        text-align:center;
         align-items:center;
     }
-
+    .logoRodape{
+        width:180px;
+        max-width:80%;
+    }
+    .social-link{
+        font-size:1.1rem;
+    }
+    .slogan{
+        font-size:1rem;
+    }
 }
