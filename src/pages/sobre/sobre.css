@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.cabecalho{
+    width: 100vw;
+    height: 12vh;
+    background-color:#051331;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+.home{
+    color:#ffffff
+}
+.home:hover{
+    border-bottom: 2px solid #d44b07;
+    cursor: pointer;
+}
+.sobre{ 
+    color:#d44b07;
+}
+.sobre:hover{
+    border-bottom: 2px solid #d44b07;
+    cursor: pointer;
+}
+.contato:hover{
+    border-bottom: 2px solid #d44b07;
+    cursor: pointer;
+}
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+.logo{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;  
+    width: 25%;
+    background-color: #051331;
+}
+
+.botoesNavegacao{
+    height: 100%;
+    width: 40%;
+    background-color:#051331;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.botoesNavegacao p{
+    font-size: 150%;   
+}
+.faleConosco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    background-color: #051331;
+}
+.whats{
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    background-color: #051331;
+    border: orangered solid 2px;
+    color: white;
+    font-weight: 500;
+}
+.whats:hover{
+    background-color: #d44b07;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.BannerPrincipal{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/whatsapp-image-2024-11-08-at-10-51-10-1731078280.jpeg);
+    background: opacity(0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloCTA{
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 60px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+.titulo{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.descricao{
+    color: #cfcfcf;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
