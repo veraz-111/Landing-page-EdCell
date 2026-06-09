@@ -4,25 +4,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextButton = document.querySelector(".next");
     const prevButton = document.querySelector(".prev");
     let index = 0;
+    function getVisibleCards() {
+        if (window.innerWidth <= 768) {
+            return 1;
+        }
+        return 3;
+    }
     function updateCarousel() {
         const width = items[0].offsetWidth;
         const gap = 16;
         container.style.transform =
             `translateX(-${index * (width + gap)}px)`;
     }
-
     nextButton.addEventListener("click", () => {
-        if (index < items.length - 1) {
+        const maxIndex =
+            items.length - getVisibleCards();
+        if (index < maxIndex) {
             index++;
             updateCarousel();
         }
     });
-
     prevButton.addEventListener("click", () => {
         if (index > 0) {
             index--;
             updateCarousel();
         }
+    });
+    window.addEventListener("resize", () => {
+        updateCarousel();
     });
     updateCarousel();
 });

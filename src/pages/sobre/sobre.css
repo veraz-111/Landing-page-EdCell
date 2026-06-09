@@ -115,3 +115,48 @@
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
+.rodape {
+    height: 13vh;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #03153B;
+    color: #fff;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 4vw;
+    gap: 12px;
+}
+
+.logoRodape{
+    max-width: 140px;
+    height: auto;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.social-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.iconInstagram, .iconFacebook {
+    width: 24px;
+    height: 24px;
+}

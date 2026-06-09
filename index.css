@@ -581,29 +581,180 @@
     background-color: #d44b07;
     transform: translateY(-2px);
 }
-@media (max-width: 480px) {
+@media (max-width: 768px){
+
     .cabecalho{
-        height: 10vh;
-        padding: 0 12px;
+        padding: 0 15px;
+        height: 80px;
     }
-    .logo img{ width: 130px; height: auto; }
-    .botoesNavegacao{ display: none; }
-    .whats{ height: 34px; width: 110px; font-size: 0.9rem; }
-    .bannerPrincipal{ flex-direction: column; padding-top: 12vh; gap: 18px; height: auto; }
-    .tituloCTA{ width: 92%; height: auto; padding: 12px; }
-    .titulo{ font-size: 1.6rem; }
-    .subtitulo{ font-size: 1rem; max-width: 100%; }
-    .imgCTA{ width: 92%; height: 220px; border-radius: 12px; }
-    .cardInfos1, .cardInfos2{ flex-direction: column; width: 94%; height: auto; gap: 12px; }
-    .cardInfos1 .servicoSmart, .cardInfos1 .servicoAcessorio, .cardInfos1 .servicoAssistencia, .cardInfos1 .servicoProdutos, .cardInfos1 .servicoParcele{ width: 100%; }
-    .ofertas{ width: 94%; margin: 1.5rem auto; }
-    .tituloInformacoesOfertas{ flex-direction: column; align-items: flex-start; padding: 18px; }
-    .leftBlock, .rightBlock{ width: 100%; display: flex; justify-content: center; }
-    .leftBlock{ text-align: left; }
-    .rightBlock{ margin-top: 6px; }
-    .produtosOfertados{ flex-direction: column; width: 100%; gap: 12px; }
-    .rodape{ height: auto; padding: 20px 0; }
-    .footer-container{ flex-direction: column; gap: 12px; padding: 16px 4vw; }
-    .footer-left{ align-items: center; }
-    .footer-right{ justify-content: center; }
+
+    .logo{
+        width: auto;
+    }
+
+    .logo img{
+        width: 130px;
+        height: auto;
+    }
+
+    .botoesNavegacao{
+        display: none;
+    }
+
+    .faleConosco{
+        width: auto;
+    }
+
+    .whats{
+        width: 120px;
+        height: 38px;
+        font-size: .8rem;
+    }
+
+    .bannerPrincipal{
+        flex-direction: column;
+        height: auto;
+        padding: 120px 20px 40px;
+        gap: 30px;
+    }
+
+    .tituloCTA{
+        width: 100%;
+        height: auto;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .subtitulo{
+        max-width: 100%;
+    }
+
+    .imgCTA{
+        width: 100%;
+        height: auto;
+    }
+
+    .imgCTA img{
+        width: 100%;
+        height: auto;
+    }
+
+    .partePrincipal{
+        height: auto;
+        margin-top: 30px;
+        gap: 25px;
+    }
+
+    .cardInfos1{
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .servicoSmart,
+    .servicoAcessorio,
+    .servicoAssistencia,
+    .servicoProdutos,
+    .servicoParcele{
+        width: 100%;
+    }
+
+    .cardInfos2{
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .caracteristicaQualidade,
+    .caracteristicaConfianca,
+    .caracteristicaRapidez,
+    .caracteristicaPosVenda{
+        width: 100%;
+    }
+
+    .caracteristicaQualidade div,
+    .caracteristicaConfianca div,
+    .caracteristicaRapidez div,
+    .caracteristicaPosVenda div{
+        width: 80%;
+    }
+
+    .ofertas{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .tituloInformacoesOfertas{
+        width: 100%;
+        height: auto;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .tituloOfertas h1{
+        font-size: 1.8rem;
+    }
+
+    .CTAOfertas p{
+        max-width: 100%;
+    }
+
+    .produtosOfertados{
+        width: 100%;
+        padding: 0;
+    }
+
+    .produtoOferta{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .imgProdutoOferta{
+        height: 200px;
+    }
+
+    .modalProduto{
+        flex-direction: column;
+        width: 95%;
+        height: 90%;
+        margin-left: 0;
+        overflow-y: auto;
+    }
+
+    .imagemProduto{
+        width: 100%;
+        height: 250px;
+    }
+
+    .informacoesProduto{
+        width: 100%;
+        height: auto;
+    }
+
+    .nomeProduto{
+        font-size: 1.8rem;
+    }
+
+    .comprarProduto{
+        width: 100%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left,
+    .footer-right{
+        width: 100%;
+        align-items: center;
+    }
+
 }
