@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #F6F6F6;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 80px;
+    background: #051331;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.botoesNavegacao {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.botoesNavegacao a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.botoesNavegacao a:hover {
+    color: #EF5C10;
+}
+
+.contato {
+    color: #EF5C10 !important;
+}
+
+.faleConosco {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.whats {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #EF5C10;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.whats:hover {
+    background: #EF5C10;
+}
+
+.menuHamburger {
+    display: none;
+}
+
+.paginaContato {
+    margin-top: 80px;
+    min-height: 100vh;
+}
+
+
+.bannerContato {
+    background: #03153B;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.bannerContato h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.bannerContato p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+.contatoContainer {
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+
+.informacoesContato {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardContato {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    transition: .2s;
+}
+
+.cardContato:hover {
+    transform: translateY(-5px);
+}
+
+.cardContato h3 {
+    color: #EF5C10;
+    margin-bottom: 10px;
+}
+
+.cardContato p {
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.formContato {
+    width: 65%;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.formContato h2 {
+    color: #051331;
+    margin-bottom: 10px;
+}
+
+.formContato input,
+.formContato textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.formContato input:focus,
+.formContato textarea:focus {
+    border-color: #EF5C10;
+}
+
+.formContato textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+.formContato button {
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background: #EF5C10;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.formContato button:hover {
+    background: #d44b07;
+    transform: translateY(-2px);
+}
+
+
+.mapaContato {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto 60px;
+}
+
+.mapaContato iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.rodape {
+    background: #03153B;
+    color: white;
+    margin-top: 60px;
+    padding: 25px 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.iconInstagram,
+.iconFacebook {
+    width: 24px;
+    height: 24px;
+}
+
+.logoRodape {
+    width: 150px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.slogan {
+    font-weight: 600;
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .bannerContato h1 {
+        font-size: 2.5rem;
+    }
+
+    .contatoContainer {
+        flex-direction: column;
+    }
+
+    .informacoesContato {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cardContato {
+        width: calc(50% - 10px);
+    }
+
+    .formContato {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .botoesNavegacao {
+        display: none;
+    }
+
+    .logo {
+        width: auto;
+        flex: 1;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    .logo img {
+        width: 140px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .menuHamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    .botoesNavegacao {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+
+        background: #051331;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 35px;
+        min-height: 250px;
+        padding: 40px 0;
+
+        display: none;
+
+        z-index: 9999;
+    }
+
+    .botoesNavegacao.ativo {
+        display: flex;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .footer-center {
+        display: none;
+    }
+
+    .paginaContato {
+        margin-top: 80px;
+    }
+
+    .bannerContato {
+        padding: 60px 20px;
+    }
+
+    .bannerContato h1 {
+        font-size: 2rem;
+    }
+
+    .bannerContato p {
+        font-size: 1rem;
+    }
+
+    .contatoContainer {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+    }
+
+    .informacoesContato {
+        width: 100%;
+    }
+
+    .cardContato {
+        width: 100%;
+    }
+
+    .formContato {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .formContato textarea {
+        min-height: 150px;
+    }
+
+    .mapaContato {
+        width: 95%;
+    }
+
+    .mapaContato iframe {
+        height: 300px;
+    }
+}
