@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
     nextButton.addEventListener("click", () => {
         const maxIndex =
             items.length - visibleCards();
-        if(index < maxIndex){
+        if (index < maxIndex) {
             index++;
             updateCarousel();
         }
     });
     prevButton.addEventListener("click", () => {
-        if(index > 0){
+        if (index > 0) {
             index--;
             updateCarousel();
         }

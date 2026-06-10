@@ -1,11 +1,10 @@
 
 const menuHamburger = document.querySelector(".menuHamburger");
-const menuNavegacao = document.querySelector(".botoesNavegacao");
+const botoesNavegacao = document.querySelector(".botoesNavegacao");
 
 menuHamburger.addEventListener("click", () => {
-    menuNavegacao.classList.toggle("ativo");
-}); 
-
+    botoesNavegacao.classList.toggle("active");
+});
 
 
 const formulario = document.querySelector(".formContato");

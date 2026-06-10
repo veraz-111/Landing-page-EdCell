@@ -11,5 +11,5 @@ const hamburger = document.querySelector(".menuHamburger");
 const menu = document.querySelector(".botoesNavegacao");
 
 hamburger.addEventListener("click", () => {
-    menu.classList.toggle("ativo");
+    menu.classList.toggle("active");
 });

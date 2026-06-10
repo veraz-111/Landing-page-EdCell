@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,10 +10,10 @@
     font-style: normal;
 }
 
-.cabecalho{
+.cabecalho {
     width: 100vw;
     height: 12vh;
-    background-color:#051331;
+    background-color: #051331;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -22,51 +23,59 @@
     font-weight: 600;
     letter-spacing: 0.2px;
 }
-.home{
-    color:#ffffff
+
+.home {
+    color: #ffffff
 }
-.home:hover{
+
+.home:hover {
     border-bottom: 2px solid #d44b07;
     cursor: pointer;
 }
-.sobre{ 
-    color:#d44b07;
+
+.sobre {
+    color: #d44b07;
 }
-.sobre:hover{
+
+.sobre:hover {
     border-bottom: 2px solid #d44b07;
     cursor: pointer;
 }
-.contato:hover{
+
+.contato:hover {
     border-bottom: 2px solid #d44b07;
     cursor: pointer;
 }
+
 .logo img {
     width: 200px;
     height: 100px;
 }
-.logo{
+
+.logo {
     height: 100%;
     align-items: center;
     justify-content: center;
-    display: flex;  
+    display: flex;
     width: 25%;
     background-color: #051331;
 }
 
-.botoesNavegacao{
+.botoesNavegacao {
     height: 100%;
     width: 40%;
-    background-color:#051331;
+    background-color: #051331;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color:white;
+    color: white;
 }
 
-.botoesNavegacao p{
-    font-size: 150%;   
+.botoesNavegacao p {
+    font-size: 150%;
 }
-.faleConosco{
+
+.faleConosco {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +83,8 @@
     height: 100%;
     background-color: #051331;
 }
-.whats{
+
+.whats {
     height: 40px;
     width: 150px;
     border-radius: 50px;
@@ -83,22 +93,25 @@
     color: white;
     font-weight: 500;
 }
-.whats:hover{
+
+.whats:hover {
     background-color: #d44b07;
     transform: translateY(-2px);
     cursor: pointer;
 }
-.BannerPrincipal{
+
+.BannerPrincipal {
     width: 100vw;
     height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../../img/image.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../img/image.png);
     background: opacity(0.3);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tituloCTA{
+
+.tituloCTA {
     max-width: 900px;
     margin: 60px auto;
     padding: 60px;
@@ -107,11 +120,13 @@
     text-align: center;
     color: #fff;
 }
-.titulo{
+
+.titulo {
     font-size: 32px;
     margin-bottom: 20px;
 }
-.descricao{
+
+.descricao {
     color: #cfcfcf;
     line-height: 1.6;
     margin-bottom: 15px;
@@ -124,7 +139,7 @@
     color: #fff;
 }
 
-.footer-container{
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -134,12 +149,12 @@
     gap: 12px;
 }
 
-.logoRodape{
+.logoRodape {
     max-width: 140px;
     height: auto;
 }
 
-.footer-left{
+.footer-left {
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -147,7 +162,7 @@
     width: 30%;
 }
 
-.social-link{
+.social-link {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -155,7 +170,230 @@
     text-decoration: none;
     font-weight: 600;
 }
-.iconInstagram, .iconFacebook {
+
+.iconInstagram,
+.iconFacebook {
     width: 24px;
     height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menuHamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menuHamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    .botoesNavegacao {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #051331;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        min-height: 220px;
+        padding: 35px 0;
+        z-index: 1;
+    }
+
+    .botoesNavegacao.active {
+        display: flex;
+    }
+
+    .botoesNavegacao a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    .cabecalho {
+        height: 80px;
+        padding: 0 15px;
+        z-index: 1000;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .logo img {
+        width: 130px;
+        height: auto;
+    }
+
+    .botoesNavegacao {
+        display: none;
+    }
+
+    .menuHamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .botoesNavegacao.active {
+        display: flex;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #051331;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 0;
+        z-index: 999;
+    }
+
+    .faleConosco {
+        width: auto;
+    }
+
+    .whats {
+        width: 110px;
+        height: 36px;
+        font-size: .8rem;
+    }
+
+    .BannerPrincipal {
+        height: auto;
+        padding: 120px 20px 60px;
+    }
+
+    .tituloCTA {
+        width: 100%;
+        padding: 25px;
+        margin: 0;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .descricao {
+        font-size: .95rem;
+    }
+
+    .rodape {
+        height: auto;
+        padding: 25px 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-center {
+        display: none;
+    }
+
+    .social-link {
+        justify-content: center;
+    }
+
+    .logoRodape {
+        width: 150px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .cabecalho {
+        height: 90px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .logo img {
+        width: 170px;
+        height: auto;
+    }
+
+    .botoesNavegacao {
+        width: 50%;
+        font-size: .95rem;
+    }
+
+    .faleConosco {
+        width: auto;
+    }
+
+    .whats {
+        width: 130px;
+        height: 38px;
+    }
+
+    .BannerPrincipal {
+        padding: 120px 30px 60px;
+        height: auto;
+    }
+
+    .tituloCTA {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .descricao {
+        font-size: 1rem;
+    }
+
+    .rodape {
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-container {
+        gap: 20px;
+    }
+
+    .footer-left {
+        width: 40%;
+    }
+
+    .footer-right {
+        width: 40%;
+        text-align: right;
+    }
+
+    .logoRodape {
+        width: 120px;
+    }
 }

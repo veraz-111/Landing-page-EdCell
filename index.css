@@ -935,69 +935,69 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px) {
 
-    .cabecalho{
+    .cabecalho {
         padding: 0 25px;
         height: 90px;
     }
 
-    .logo img{
+    .logo img {
         width: 170px;
         height: auto;
     }
 
-    .botoesNavegacao{
+    .botoesNavegacao {
         width: 50%;
         font-size: 0.95rem;
     }
 
-    .faleConosco{
+    .faleConosco {
         width: auto;
     }
 
-    .whats{
+    .whats {
         width: 130px;
     }
 
-    .bannerPrincipal{
+    .bannerPrincipal {
         padding-top: 80px;
         gap: 30px;
         height: auto;
         min-height: 60vh;
     }
 
-    .tituloCTA{
+    .tituloCTA {
         width: 45%;
         height: auto;
     }
 
-    .titulo{
+    .titulo {
         font-size: 2.2rem;
     }
 
-    .subtitulo{
+    .subtitulo {
         max-width: 100%;
     }
 
-    .imgCTA{
+    .imgCTA {
         width: 45%;
         height: auto;
     }
 
-    .imgCTA img{
+    .imgCTA img {
         width: 100%;
         height: auto;
     }
 
-    .partePrincipal{
+    .partePrincipal {
         height: auto;
         gap: 35px;
         margin-top: 20px;
         padding-bottom: 50px;
     }
 
-    .cardInfos1{
+    .cardInfos1 {
         flex-wrap: wrap;
         height: auto;
         padding: 25px;
@@ -1008,12 +1008,12 @@
     .servicoAcessorio,
     .servicoAssistencia,
     .servicoProdutos,
-    .servicoParcele{
+    .servicoParcele {
         width: 30%;
         min-height: 150px;
     }
 
-    .cardInfos2{
+    .cardInfos2 {
         flex-wrap: wrap;
         height: auto;
         padding: 25px;
@@ -1023,49 +1023,49 @@
     .caracteristicaQualidade,
     .caracteristicaConfianca,
     .caracteristicaRapidez,
-    .caracteristicaPosVenda{
+    .caracteristicaPosVenda {
         width: 45%;
     }
 
-    .ofertas{
+    .ofertas {
         flex-direction: column;
         height: auto;
         gap: 30px;
         padding: 25px;
     }
 
-    .tituloInformacoesOfertas{
+    .tituloInformacoesOfertas {
         width: 100%;
         height: auto;
         padding: 30px;
         gap: 25px;
     }
 
-    .tituloOfertas h1{
+    .tituloOfertas h1 {
         font-size: 2rem;
     }
 
-    .produtosOfertados{
+    .produtosOfertados {
         width: 100%;
         padding: 10px;
     }
 
-    .carrossel{
+    .carrossel {
         width: 100%;
         padding: 0 10px;
     }
 
-    .containerProdutos{
+    .containerProdutos {
         gap: 16px;
     }
 
-    .produtoOferta{
+    .produtoOferta {
         min-width: calc(50% - 8px);
         max-width: calc(50% - 8px);
         padding: 15px;
     }
 
-    .imgProdutoOferta{
+    .imgProdutoOferta {
         height: 140px;
         width: 100%;
         display: flex;
@@ -1074,7 +1074,7 @@
         margin-bottom: 10px;
     }
 
-    .imgProdutoOferta img{
+    .imgProdutoOferta img {
         max-width: 100%;
         max-height: 140px;
         width: auto;
@@ -1082,58 +1082,58 @@
         object-fit: contain;
     }
 
-    .produtoOferta h3{
+    .produtoOferta h3 {
         font-size: 1rem;
     }
 
-    .produtoOferta p{
+    .produtoOferta p {
         font-size: 0.9rem;
     }
 
     .prev,
-    .next{
+    .next {
         z-index: 10;
     }
 
-    .modalProduto{
+    .modalProduto {
         width: 95%;
         height: auto;
         max-height: 90vh;
         margin-left: 0;
     }
 
-    .imagemProduto{
+    .imagemProduto {
         width: 40%;
     }
 
-    .informacoesProduto{
+    .informacoesProduto {
         width: 60%;
     }
 
-    .nomeProduto{
+    .nomeProduto {
         font-size: 1.8rem;
     }
 
-    .rodape{
+    .rodape {
         padding: 25px;
     }
 
-    .footer-container{
+    .footer-container {
         gap: 20px;
     }
 
     .footer-left,
-    .footer-right{
+    .footer-right {
         width: 35%;
     }
 
-    .footer-center{
+    .footer-center {
         width: 30%;
         display: flex;
         justify-content: center;
     }
 
-    .logoRodape{
+    .logoRodape {
         width: 150px;
     }
 }
